@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YouTube Clip Looper</title><link rel="stylesheet" href="popup.css"></head>
+<body><main class="app">
+<header><div><small>YOUTUBE TOOL</small><h1>Clip Looper</h1><p>Save moments. Replay them.</p></div><button id="refresh">↻</button></header>
+<section class="card current"><div class="label">CURRENT VIDEO</div><h2 id="title">No video detected</h2><div class="meta"><div id="thumb">YT</div><div><strong id="time">00:00</strong><span id="duration">Duration —</span></div></div>
+<div class="grid"><button id="setStart">Set Start</button><button id="setEnd">Set End</button></div>
+<div class="grid"><label>START<input id="start" value="00:00"></label><label>END<input id="end" value="00:10"></label></div>
+<label>CLIP NAME<input id="name" placeholder="e.g. Knapsack explanation"></label>
+<button id="save" class="primary">＋ Save Clip</button><p id="hint">Open a YouTube watch page to begin.</p></section>
+<section class="library"><div class="libraryHead"><div><small>MY CLIPS</small><h2><span id="count">0</span> saved</h2></div><select id="sort"><option value="recent">Recently Added</option><option value="name">Name</option><option value="video">Video</option></select></div>
+<input id="search" class="search" placeholder="Search clips or videos..."><div id="list"></div><div id="empty">No clips yet.</div></section><div id="toast"></div></main><script src="popup.js"></script></body></html>
